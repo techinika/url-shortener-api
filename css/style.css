@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+:root {
+    --primary: hsl(180, 66%, 49%);
+    --primary_green: hsl(180, 62%, 36%);
+    --dark_violet: hsl(257, 27%, 26%);
+    --secondary_red: hsl(0, 87%, 67%);
+    --very_dark_violet: hsl(260, 8%, 14%);
+    --very_dark_blue: hsl(255, 11%, 22%);
+    --grayish_violet: hsl(257, 7%, 63%);
+    --gray: hsl(0, 0%, 75%);
+    --padding_size: 15px;
+}
+
+body {
+    font-size: 18px;
+    background-color: rgb(238, 238, 238);
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+}
+
+.heading {
+    background-color: white;
+    height: 90vh;
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 10vh;
+    margin: auto;
+    align-items: center;
+}
+
+nav .left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav .left .menu a{
+    padding: 10px;
+    text-decoration: none;
+    color: var(--gray);
+}
+nav .left .menu a:hover {
+    color: black;
+}
+
+nav .right {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+nav .right button {
+    cursor: pointer;
+}
+
+.register {
+    padding: 10px 30px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background-color: var(--primary_green);
+    color: white;
+}
+
+.register:hover {
+    background-color: var(--primary);
+}
+
+#login {
+    background-color: transparent !important;
+    outline: none;
+    border: none;
+    color: var(--gray);
+}
+
+#login:hover {
+    color: black;
+}
+
+/* Styling hero section */
+
+.hero-section {
+    height: 80vh;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap-reverse;
+}
+
+.description {
+    flex: 1;
+    padding: 100px;
+    padding-left: 0px;
+}
+
+.description .head-p {
+    font-size: 100px;
+    padding: 0;
+    margin: 0;
+    letter-spacing: normal;
+    line-height: 1;
+    font-weight: bolder;
+}
+
+.description p {
+    font-size: larger;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image div {
+    position: relative;
+}
+
+.hero-image .img img {
+    /* position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; */
+    width: 1000px;
+    margin: 0px -400px 50px 100px;
+}
+
+/* Operations on links */
+
+.links {
+    width: 100%;
+    position: absolute;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.links-operations {
+    width: 80%;
+    margin: auto;
+    position: absolute;
+    top: -60px;
+}
+
+form {
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    border-radius: 5px;
+    background: url("../images/bg-shorten-desktop.svg");
+    background-color: var(--dark_violet);
+}
+
+form input, form div input {
+    padding: 15px;
+    border-radius: 5px;
+    outline: none;
+    border: 0;
+}
+
+form div {
+    width: 100%;
+}
+
+form div p {
+    font-size: smaller;
+    padding: 0;
+    margin: 0;
+    color: var(--secondary_red);
+}
+
+form div input[type="url"] {
+    width: 100%;
+}
+
+form input[type="submit"] {
+    padding: 15px 30px;
+    border-radius: 5px;
+    background-color: var(--primary_green);
+    color: white;
+    font-weight: bold;
+}
+
+form input[type="submit"]:hover {
+    background-color: var(--primary);
+}
+
+.shortenedLinks {
+    margin: 15px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.link {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 0px 15px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.link button {
+    background-color: var(--primary_green);
+    color: white;
+    padding: 5px 15px;
+    outline: none;
+    border-radius: 5px;
+    border: 0;
+}
+
+.link button:hover {
+    background-color: var(--primary);
+}

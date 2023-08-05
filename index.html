@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shorten Links</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <nav>
+          <div class="left">
+            <h1>Shortly</h1>
+            <div class="menu">
+              <a href="#">Features</a>
+              <a href="#">Pricing</a>
+              <a href="#">Resources</a>
+            </div>
+          </div>
+          <div class="right">
+            <button id="login">Login</button>
+            <button class="register">Sign Up</button>
+          </div>
+        </nav>
+        <section class="hero-section">
+          <div class="description">
+            <p class="head-p">More than just shorter links</p>
+            <p>
+              Build your brand's recognition and get detailed insights on how
+              your links are performing.
+            </p>
+            <button class="register">Get Started</button>
+          </div>
+          <div class="hero-image">
+            <div class="img">
+              <img src="./images/illustration-working.svg" alt="Hero Image" />
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="links">
+        <div class="links-operations">
+          <form>
+            <div class="input">
+              <input
+                type="url"
+                id="inputUrl"
+                placeholder="Shorten a link here..."
+              />
+              <p id="feedback"></p>
+            </div>
+
+            <input type="submit" id="submitBtn" value="Shorten it" />
+          </form>
+          <div class="shortenedLinks">
+            <!-- Links shortened will be rendered here -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/shorten.js"></script>
+  </body>
+</html>
