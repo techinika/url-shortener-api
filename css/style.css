@@ -149,6 +149,8 @@ nav .right button {
     position: relative;
     display: flex;
     justify-content: center;
+    height: max-content;
+    margin-bottom: 60px;
 }
 
 .links-operations {
@@ -233,4 +235,121 @@ form input[type="submit"]:hover {
 
 .link button:hover {
     background-color: var(--primary);
+}
+
+
+
+.stats {
+    width: 80%;
+    margin: 0 auto 20px auto;
+    padding: 50px 0;
+}
+
+.stats header {
+    text-align: center;
+    padding: 100px 40px;
+}
+
+.stats header h1 { 
+    margin: 0;
+}
+
+.stats .cards {
+    display: flex;
+    align-items: center;
+}
+
+.stats .cards .card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 50px;
+    position: relative;
+}
+
+.two {
+    margin-top: 80px;
+}
+
+.three {
+    margin-top: 160px;
+}
+
+.stats .cards .card img {
+    border-radius: 50px;
+    background-color: var(--dark_violet);
+    padding: 20px;
+    position: absolute;
+    top: -40px;
+}
+
+.stats hr {
+    width: 100px;
+    padding: 8px;
+    background-color: var(--primary);
+    border: 0;
+}
+
+.get-started {
+    margin-top: 60px;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: url(../images/bg-boost-desktop.svg);
+    background-color: var(--dark_violet);
+    padding: 40px;
+}
+
+footer {
+    background-color: var(--very_dark_violet);
+    color: white;
+}
+
+.footer-contents {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-contents h1 {
+    padding: 0;
+    margin: 0;
+}
+
+.footer-contents ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-contents ul li:hover {
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.footer-contents div {
+    padding: 50px 0;
+}
+
+.footer-contents div p {
+    font-weight: bold;
+}
+
+.footer-contents img {
+    padding: 0 20px;
+}
+
+.footer-contents img:hover {
+    color: var(--primary);
+}
+
+.brand {
+    flex: 2;
+}
+
+.socials, .features, .resources, .company {
+    flex: 1;
 }

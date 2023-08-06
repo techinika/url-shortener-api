@@ -19,7 +19,15 @@ submitBtn.addEventListener("click", (e) => {
       .then((data) =>
         display(inputUrl.value, `https://${data.result.short_link2}`)
       )
-      .catch((err) => console.log(err));
+      .catch((err) => {
+        inputUrl.style.border = "3px solid red";
+        feedback.innerHTML = "Please connect to a network and try again!";
+
+        setTimeout(() => {
+          inputUrl.style.border = "0px";
+          feedback.innerHTML = "";
+        }, 3000);
+      });
   }
 });
 
