@@ -15,7 +15,8 @@
     --very_dark_blue: hsl(255, 11%, 22%);
     --grayish_violet: hsl(257, 7%, 63%);
     --gray: hsl(0, 0%, 75%);
-    --padding_size: 15px;
+    --page_size: 80%;
+
 }
 
 body {
@@ -37,7 +38,7 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: var(--page_size);
     height: 10vh;
     margin: auto;
     align-items: center;
@@ -96,7 +97,7 @@ nav .right button {
 
 .hero-section {
     height: 80vh;
-    width: 80%;
+    width: var(--page_size);
     margin: auto;
     display: flex;
     align-items: center;
@@ -132,11 +133,6 @@ nav .right button {
 }
 
 .hero-image .img img {
-    /* position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0; */
     width: 1000px;
     margin: 0px -400px 50px 100px;
 }
@@ -154,7 +150,7 @@ nav .right button {
 }
 
 .links-operations {
-    width: 80%;
+    width: var(--page_size);
     margin: auto;
     position: absolute;
     top: -60px;
@@ -240,7 +236,7 @@ form input[type="submit"]:hover {
 
 
 .stats {
-    width: 80%;
+    width: var(--page_size);
     margin: 0 auto 20px auto;
     padding: 50px 0;
 }
@@ -308,7 +304,7 @@ footer {
 }
 
 .footer-contents {
-    width: 80%;
+    width: var(--page_size);
     margin: auto;
     display: flex;
     justify-content: space-between;
